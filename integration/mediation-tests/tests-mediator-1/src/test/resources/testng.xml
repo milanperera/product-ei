@@ -107,6 +107,8 @@
             <class name="org.wso2.carbon.esb.mediator.test.call.CallMediatorProxyWithNamedSeqCase"/>
            <class name="org.wso2.carbon.esb.mediator.test.call.ESBJAVA4469CallMediatorWithOutOnlyTestCase"/>
            <class name="org.wso2.carbon.esb.mediator.test.call.ESBJAVA5216CallMediatorPerAPILogTest"/>
+            <class name="org.wso2.carbon.esb.mediator.test.call.CallMediatorBlockingFailoverTestCase"/>
+            <class name="org.wso2.carbon.esb.mediator.test.call.CallMediatorBlockingLoadBalanceFailoverTest"/>
             <!--This has been commented out until carbon kernel going to release with axis2 version 1.6.1-wso2v23.-->
             <!--<class name="org.wso2.carbon.esb.mediator.test.call.ESBJAVA5217NoDefaultContentTypeTestCase"/>-->
 
@@ -158,7 +160,7 @@
 
     <test name="Message-Store-Test" preserve-order="true" verbose="2">
         <classes>
-            <class name="org.wso2.carbon.esb.message.store.test.JMSEndpointSuspensionViaVFSTest"/>
+            <!--<class name="org.wso2.carbon.esb.message.store.test.JMSEndpointSuspensionViaVFSTest"/>-->
             <class name="org.wso2.carbon.esb.message.store.test.MessageStoreMessageCleaningTestCase"/>
             <class name="org.wso2.carbon.esb.message.store.test.MessageStoreMessageConcurrencyTestCase"/>
             <class name="org.wso2.carbon.esb.message.store.test.MessageStoreMessageDeleteTestCase"/>
@@ -217,14 +219,6 @@
         </packages>
     </test>
 
-    <test name="Property-mediator-Test-0" preserve-order="true" verbose="2">
-        <classes>
-            <class name="org.wso2.carbon.esb.mediator.test.property.PropertyIntegrationXpathAxis2PropertyTestCase"/>
-            <class name="org.wso2.carbon.esb.mediator.test.property.PropertyIntegrationXPathTrpPropertyTestCase"/>
-            <class name="org.wso2.carbon.esb.mediator.test.property.PropertyIntegrationXPathExtensionTestCase"/>
-            <class name="org.wso2.carbon.esb.mediator.test.property.PropertyIntegrationXPathBodyTestCase"/>
-        </classes>
-    </test>
     <test name="Property-mediator-Test-1" preserve-order="true" verbose="2">
         <packages>
             <package name="org.wso2.carbon.esb.mediator.test.property"/>
